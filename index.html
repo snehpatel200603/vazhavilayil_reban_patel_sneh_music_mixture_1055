@@ -5,63 +5,264 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Remix Revolution</title>
+    <title>beat boss</title>
 </head>
 <body>
-
-    <!-- This website has team consisting of Rebin Reji Vazhavilayil and Sneh Patel. 
-The inspiration for this website has been taken from the following websites:
-1. IncrediBox: https://www.incredibox.com/demo/
-2. YouDJ: https://you.dj/free-dj-software
-3. YoutubeDJ: https://youtube-dj.com/
-Through this website we trying to create an online website with drag and drop functionality to create music. This website has svg icons that will play a certain music once clicked. 
-The implementation of a comprehensive music mixer feature for our online platform is the objective of this development effort. Users will be able to make customized mixes and remixes by blending, editing, and manipulating audio tracks with the help of the music mixer. The feature will have capabilities for real-time audio processing, a user-friendly interface with simple controls, and seamless track integration.
-
-Tasks:
-1. UI:
-   - Create an appealing and user-friendly user interface for the music mixer.
-   - Add drag-and-drop functionality to make it simple to import and rearrange tracks.
-   - Develop a layout that is responsive to a variety of screen sizes and devices.
-
-2. Track The board:
-
-
-3. Tools for Mixing and Editing:
-   - Incorporate audio editing tools like panning, fade-in/out effects, and volume control.
-   - Allow users to harmonize tracks by adjusting tempo, key, and pitch.
-   - Provide options for looping and looping synchronization for smooth playback.
-
-4. Processing of Audio in Real Time:
-   - Real-time mixing capabilities can be achieved by utilizing audio processing frameworks and libraries.
-   - Carry out crossfading and progress impacts for smooth track mixing.
-   - During audio manipulation, ensure responsiveness and low-latency playback.
-
-5. Sharing and exporting:
-   - Create a feature that lets you export mixed tracks in common audio formats like MP3, WAV, and so on.
-   - Allow users to share their mixes directly through unique URLs or on social media platforms.
-   - Control the visibility and accessibility of shared mixes by utilizing privacy settings.
-
-6. Testing and Streamlining:
-   - Conduct extensive testing to guarantee the music mixer's stability, functionality, and compatibility with various browsers and devices.
-   - Make the feature perform better so that it can run smoothly and effectively even in combinations that use a lot of resources.
-
-Throughout the development process, keep in mind to adhere to best coding practices, maintain a modular and extensible code structure, and consider user feedback for iterative improvements.
--->
-
-    <header class="sticky-header">
-        <a href="index.html">HOME</a>
-        <a href="#">DEMO</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">SHOP</a>
-        <a href="#">ALBUM</a>
-    </header>
-    
-
-
-    <footer>
-
-    </footer>
-
-    <link rel="stylesheet" href="js/script.js">
-</body>
+   <h1>Drag and Drop Instrument Icons</h1>
+   <nav class="navbar">
+     <!-- logo -->
+     <!--tried using image as a logo
+       or could switch with text based logo but have to make edit in css-->
+     <div class="logo">
+       <img src="img/logo-black.png" >
+     </div>
+     <!-- start of navigation menut -->
+     <ul class="navtext">
+       <!-- start of  sidemenu -->
+       <div class="sidemenu">
+           <!--HTML validator is showing error in this part: FURTHER RESEARCH NEEDED-->
+         <li>
+           <a href="#home">APP</a>
+         </li>
+         <li>
+           <a href="#blog">DEMO</a>
+         </li>
+         <li>
+           <a href="#contactus">SHOP</a>
+         </li>
+         <li>
+             <a href="#contactus">ABOUT US</a>
+           </li>
+       </div>
+     </ul>
+   </nav>
+ 
+   <div class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+     <!-- The drop area where instrument icons will be placed -->
+   </div>
+ 
+   <div class="pieces-area">
+     <div class="piece" draggable="true" ondragstart="drag(event)" id="instrument1">
+       <!-- Instrument SVG icons drum kit -->
+       <?xml version="1.0" encoding="utf-8"?>
+       <!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+       <style type="text/css">
+         .st0{fill:#C2C7E5;}
+         .st1{fill:#F5BB1B;}
+         .st2{fill:#35464E;}
+         .st3{fill:#E72845;}
+         .st4{fill:#C7161E;}
+         .st5{fill:#526C78;}
+         .st6{fill:#263137;}
+       </style>
+       <path class="st0" d="M612.3,156.8h30.1v552.8h-30.1V156.8z"/>
+       <path id="crash_x5F_cymbal_x5F_1" class="st1" d="M642.4,146.6v-14.2h-30.1v14.2h-77.5v27.8h185.1v-27.8H642.4z M534.8,196.6h185.1
+         v27.8H534.8V196.6z"/>
+       <path class="st0" d="M170.7,156.8h30.1v552.8h-30.1V156.8z"/>
+       <path id="crash_x5F_cymbal_x5F_2" class="st1" d="M105.6,108.3l171,71.2l-10.7,25.7L94.9,134L105.6,108.3z"/>
+       <path id="drum_x5F_1" class="st2" d="M57.1,271.4h248.1v27.8H57.1V271.4z"/>
+       <path class="st3" d="M69.1,299.1h224v106h-224V299.1z"/>
+       <path class="st2" d="M57.1,405.2h248.1v27.9H57.1V405.2z"/>
+       <path class="st4" d="M69.1,299.1h224v30.5h-224V299.1z"/>
+       <path class="st2" d="M106.1,299.1H139v72.2h-32.9V299.1z M224.1,299.1H257v72.2h-32.9V299.1z"/>
+       <path id="drum_x5F_2" class="st2" d="M503.2,271.4h248.1v27.8H503.2V271.4z"/>
+       <path class="st3" d="M515.4,299.1h224v106h-224V299.1z"/>
+       <path class="st2" d="M503.2,405.2h248.1v27.9H503.2V405.2z"/>
+       <path class="st4" d="M515.4,299.1h224v30.5h-224V299.1z"/>
+       <path class="st2" d="M552.3,299.1h32.8v72.2h-32.8V299.1z M670.4,299.1h32.8v72.2h-32.8V299.1z"/>
+       <path class="st0" d="M568.2,687.7l-26.1,21.8l-40.9-49l26.1-21.8L568.2,687.7z M286.6,638.6l26.1,21.8l-40.9,49l-26.1-21.8
+         L286.6,638.6z"/>
+       <path class="st5" d="M231.8,524.5c0,97.1,78.7,175.8,175.8,175.8s175.8-78.7,175.8-175.8s-78.7-175.8-175.8-175.7
+         C310.5,348.8,231.8,427.5,231.8,524.5L231.8,524.5z"/>
+       <path class="st6" d="M407.5,714.2c-104.7-0.1-189.5-85-189.6-189.7c0.1-104.7,84.9-189.5,189.6-189.6
+         c104.7,0.1,189.5,84.9,189.6,189.6C597.1,629.2,512.2,714.1,407.5,714.2z M407.5,362.8c-89.3,0.1-161.7,72.5-161.8,161.8
+         c0,89.2,72.6,161.8,161.8,161.8s161.9-72.6,161.9-161.8C569.3,435.2,496.9,362.8,407.5,362.8L407.5,362.8z"/>
+       </svg>
+       
+     </div>
+     
+     <div class="piece" draggable="true" ondragstart="drag(event)" id="instrument2">
+         <!-- Instrument SVG icons guitar kit -->
+       <?xml version="1.0" encoding="utf-8"?>
+       <!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+       <style type="text/css">
+         .st15{fill:#BB1A34;}/*st0*/
+         .st16{fill:#292F33;}/*st1*/
+         .st17{fill:#F5F8FA;}/*st2*/
+         .st18{fill:#CCD6DD;}/*st3*/
+       </style>
+       <path class="st15" d="M485.1,456.9c-47.1,15.7-62.8-62.8-62.8-62.8s21.4-21.5,5.2-40.6c25.3-25.3,10.5-37.9,10.5-37.9
+         c-43.4-43.4-113.7-43.4-157.1,0c-4.6,4.6-8.7,9.6-12.3,15.1c-1.4,1.9-2.6,3.9-3.8,5.8l-0.3,0.6c-6.3,10.4-10.8,21.7-13.4,33.5
+         c-3.5,7.1-8.4,14.6-17.3,23.6c-31.4,31.4-110-15.7-172.8,47.1c-0.6,0.6-1,1.5-1.5,2.3c-2.1,1.9-4.3,3.5-6.3,5.6
+         c-73.8,73.8-66.7,200.4,15.7,282.8c78.3,78.3,196.4,88.4,271.3,26c1.3-0.7,2.6-1.4,3.7-2.4c1.6-1.6,2.8-3.1,4.3-4.7
+         c1.2-1.1,2.4-2.1,3.6-3.2c37.6-37.6,52-82.9,46.4-129.1c-1.5-22-3.7-39.2,8.7-51.6c15.7-15.7,62.8,0,94.3-31.4
+         C547.9,488.3,514.9,447,485.1,456.9L485.1,456.9z"/>
+       <path class="st16" d="M333,420.2L673.9,79.4l47.1,47.2L380.2,467.4L333,420.2z"/>
+       <path class="st17" d="M222.2,647.4c39.6,28.4,43.5,77.2,41.3,105.6c-0.9,11.7,11.5,20,21.8,14.2c57-32.4,102.3-84.2,89.7-174.5
+         c-2.5-16.3,2.5-47,50.5-53.5c48-6.4,65.4-24.4,71.3-33c3.4-4.9,6.4-18.5-6.9-19c-13.4-0.5-46.5,9.9-76.2-25.2
+         c-29.7-35.2-34.6-49.5-35.6-55c-1-5.4-31.3-82.1-56.1-41.4c-20.6,33.8-43.5,100.2-117.5,117.5c-30.1,7-68.2,22.3-79.2,43.6
+         c-18.5,35.6,10.2,60.6,35,77.4C185,620.8,222.2,647.4,222.2,647.4L222.2,647.4z"/>
+       <path class="st16" d="M290.5,431.4l31.4-31.4l78.6,78.6l-31.4,31.4L290.5,431.4z M191,530.8l31.4-31.4l78.6,78.6l-31.4,31.4
+         L191,530.8z"/>
+       <path id="string" class="st18" d="M164.4,604.2l484.5-483.6l11.8,11.8L176.2,616L164.4,604.2z M183.7,623.5l484.5-483.6l11.8,11.8
+         L195.5,635.3L183.7,623.5z"/>
+       <path id="bottom_x5F_of_x5F_string" class="st16" d="M218.1,629.4c8.6,8.6,8.6,22.8,0,31.4c-8.6,8.6-22.8,8.6-31.4,0l-47.2-47.1
+         c-8.6-8.7-8.6-22.7,0-31.4h0c8.7-8.6,22.7-8.6,31.4,0L218.1,629.4z"/>
+       <circle id="big_x5F_circle" class="st16" cx="289.5" cy="656.8" r="22.2"/>
+       <path id="small_x5F_circle" class="st16" d="M321,708.5c0,8.4-6.8,15.2-15.2,15.3c-8.4,0-15.2-6.8-15.3-15.2c0,0,0,0,0,0
+         c0-8.4,6.8-15.2,15.3-15.2C314.2,693.2,321,700.1,321,708.5z"/>
+       <path id="head_x5F_of_x5F_guitar" class="st15" d="M779.7,100.9c9.2,9.3,9.2,24.3,0,33.6l-96.9,67.1c-9.3,9.2-24.3,9.2-33.6,0
+         l-50.3-50.4c-9.2-9.3-9.2-24.3,0-33.6L666,20.7c9.3-9.2,24.3-9.2,33.6,0L779.7,100.9z"/>
+       </svg>
+       
+     </div>
+     
+     <div class="piece" draggable="true" ondragstart="drag(event)" id="instrument3">
+       <!-- Instrument SVG icons piano -->
+       <?xml version="1.0" encoding="utf-8"?>
+       <!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+       <style type="text/css">
+         .st0{fill:#656D78;}
+         .st1{fill:#FFCE54;}
+         .st2{fill:#434A54;}
+         .st3{fill:#7F4545;}
+         .st4{fill:#965353;}
+         .st5{fill:#E6E9ED;}
+         .st6{fill:#A85D5D;}
+         .st7{fill:#CCD1D9;}
+       </style>
+       <rect x="216.6" y="439" class="st0" width="78.3" height="23.7"/>
+       <g>
+         <path class="st1" d="M234.7,458.6c-5.9,0-10.7-4.8-10.7-10.7v-10.7c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7V448
+           C245.3,453.9,240.6,458.6,234.7,458.6z"/>
+         <path class="st1" d="M277.3,458.6c-5.9,0-10.7-4.8-10.7-10.7v-10.7c0-5.9,4.8-10.7,10.7-10.7c5.9,0,10.7,4.8,10.7,10.7V448
+           C288,453.9,283.2,458.6,277.3,458.6z"/>
+       </g>
+       <g id="supports">
+         <path class="st2" d="M213.3,448c-5.9,0-10.7-4.8-10.7-10.7V320c0-5.9,4.8-10.7,10.7-10.7S224,314.1,224,320v117.3
+           C224,443.2,219.2,448,213.3,448z"/>
+         <path class="st2" d="M298.7,448c-5.9,0-10.7-4.8-10.7-10.7V320c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7v117.3
+           C309.3,443.2,304.5,448,298.7,448z"/>
+         <path class="st2" d="M480,202.7c-2.6,0-5.2-0.9-7.3-2.9l-128-119.5c-4.3-4-4.5-10.8-0.5-15.1c4-4.3,10.8-4.5,15.1-0.5l128,119.5
+           c4.3,4,4.5,10.8,0.5,15.1C485.7,201.5,482.8,202.7,480,202.7z"/>
+       </g>
+       <g id="woodenplanks">
+         <path class="st3" d="M10.7,202.7c-4.4,0-8.5-2.8-10.1-7.1c-2-5.6,1-11.6,6.5-13.6L433.8,32.6c5.6-1.9,11.6,1,13.6,6.5
+           c1.9,5.6-1,11.6-6.5,13.6L14.2,202.1C13,202.5,11.8,202.7,10.7,202.7z"/>
+         <path class="st3" d="M64,309.3H32c-5.9,0-10.7,4.8-10.7,10.7v149.3c0,5.9,4.8,10.7,10.7,10.7h32c5.9,0,10.7-4.8,10.7-10.7V320
+           C74.7,314.1,69.9,309.3,64,309.3z"/>
+         <path class="st3" d="M480,309.3h-32c-5.9,0-10.7,4.8-10.7,10.7v149.3c0,5.9,4.8,10.7,10.7,10.7h32c5.9,0,10.7-4.8,10.7-10.7V320
+           C490.7,314.1,485.9,309.3,480,309.3z"/>
+       </g>
+       <g>
+         <path class="st2" d="M21.3,458.6v10.7c0,5.9,4.8,10.7,10.7,10.7h32c5.9,0,10.7-4.8,10.7-10.7v-10.7H21.3z"/>
+         <path class="st2" d="M437.3,458.6v10.7c0,5.9,4.8,10.7,10.7,10.7h32c5.9,0,10.7-4.8,10.7-10.7v-10.7H437.3z"/>
+       </g>
+       <path class="st4" d="M501.3,181.3H10.7C4.8,181.3,0,186.1,0,192v128c0,5.9,4.8,10.7,10.7,10.7h490.6c5.9,0,10.7-4.8,10.7-10.7V192
+         C512,186.1,507.2,181.3,501.3,181.3z"/>
+       <rect id="whitekeys" x="42.7" y="256" class="st5" width="426.6" height="32"/>
+       <g>
+         <rect x="469.3" y="256" class="st6" width="42.7" height="32"/>
+         <rect x="0" y="256" class="st6" width="42.7" height="32"/>
+       </g>
+       <g id="book">
+         <rect x="256" y="170.7" class="st5" width="42.7" height="64"/>
+         <rect x="213.3" y="170.7" class="st5" width="42.7" height="64"/>
+       </g>
+       <g id="blackkeys">
+         <path id="key9" class="st2" d="M426.7,277.3c5.9,0,10.7-4.8,10.7-10.7V256H416v10.7C416,272.6,420.8,277.3,426.7,277.3z"/>
+         <path id="key8" class="st2" d="M384,277.3c5.9,0,10.7-4.8,10.7-10.7V256h-21.3v10.7C373.3,272.6,378.1,277.3,384,277.3z"/>
+         <path id="key7" class="st2" d="M341.3,277.3c5.9,0,10.7-4.8,10.7-10.7V256h-21.3v10.7C330.7,272.6,335.4,277.3,341.3,277.3z"/>
+         <path id="key6" class="st2" d="M298.7,277.3c5.9,0,10.7-4.8,10.7-10.7V256H288v10.7C288,272.6,292.8,277.3,298.7,277.3z"/>
+         <path id="key5" class="st2" d="M256,277.3c5.9,0,10.7-4.8,10.7-10.7V256h-21.3v10.7C245.3,272.6,250.1,277.3,256,277.3z"/>
+         <path id="key4" class="st2" d="M213.3,277.3c5.9,0,10.7-4.8,10.7-10.7V256h-21.3v10.7C202.7,272.6,207.4,277.3,213.3,277.3z"/>
+         <path id="key3" class="st2" d="M170.7,277.3c5.9,0,10.7-4.8,10.7-10.7V256H160v10.7C160,272.6,164.8,277.3,170.7,277.3z"/>
+         <path id="key2" class="st2" d="M128,277.3c5.9,0,10.7-4.8,10.7-10.7V256h-21.3v10.7C117.3,272.6,122.1,277.3,128,277.3z"/>
+         <path id="key1" class="st2" d="M85.3,277.3c5.9,0,10.7-4.8,10.7-10.7V256H74.7v10.7C74.7,272.6,79.4,277.3,85.3,277.3z"/>
+         <path id="footpad" class="st2" d="M298.7,480h-85.3c-5.9,0-10.7-4.8-10.7-10.7v-32c0-5.9,4.8-10.7,10.7-10.7h85.3
+           c5.9,0,10.7,4.8,10.7,10.7v32C309.3,475.2,304.5,480,298.7,480z M224,458.6h64V448h-64V458.6z"/>
+       </g>
+       <rect x="245.3" y="170.7" class="st7" width="21.3" height="64"/>
+       </svg>
+       
+     </div>
+     
+     <div class="piece" draggable="true" ondragstart="drag(event)" id="instrument4">
+       <!-- Instrument SVG icons violine -->
+       <?xml version="1.0" encoding="utf-8"?>
+       <!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+       <style type="text/css">
+         .st19{fill:#DE7F11;}/* #st0 */
+         .st20{fill:#333333;}/* #st1 */
+         .st21{fill:#B3660D;}/* #st2 */
+         .st22{fill:#E2D8C7;}/* #st3 */
+       </style>
+       <path class="st19" d="M334,704.4c3.4-35.3,20.6-45.6,32-47.2c41-5.9,32.4-19.4,23.7-23.7c-47.6-23.3-9.5-73.4-1.3-84.4
+         c29.5-39.4,79.2-12.4,79.2-12.4c-4.1-58,44.1-55,68.5-68.5c110.9-61.6,16.1-153.4-17-186.5s-124.9-127.9-186.5-17
+         c-13.5,24.3-10.6,72.7-68.5,68.5c0,0,27.1,49.7-12.4,79.2c-11,8.2-61.1,46.3-84.4-1.3c-4.3-8.7-17.8-17.3-23.7,23.7
+         c-1.6,11.4-11.6,29.6-47.2,32c-85.3,5.7-106.3,123.3,4,233.6C212.1,812,326.2,785.8,334,704.4L334,704.4z"/>
+       <path class="st20" d="M381.8,467.1L333,418.3l342.3-318l24.4,24.4L381.8,467.1z M729.4,87.3l40.9,40.9L760,138.5l-41-40.9L729.4,87.3
+         z"/>
+       <g>
+         <path class="st20" d="M673.2,49.1l34.4,34.4l-10.3,10.3l-34.4-34.4L673.2,49.1z"/>
+         <path class="st20" d="M666.9,77.7l-10.7-23.2l12-12l23.2,10.7L666.9,77.7z"/>
+       </g>
+       <g>
+         <path class="st20" d="M702.3,106.6l40.9,40.9l-10.3,10.4l-40.9-41L702.3,106.6z"/>
+         <path class="st20" d="M737.3,127.3l10.7,23.2l-12,12l-23.2-10.7L737.3,127.3z"/>
+       </g>
+       <path class="st20" d="M637.6,73.1l40.9,40.9l-10.3,10.3l-40.9-40.9L637.6,73.1z"/>
+       <path class="st21" d="M758.1,86.6l-44.7-44.7L737.9,25L775,62.2L758.1,86.6z"/>
+       <path class="st19" d="M693.2,142.9l34-51.2l16.1-2.8L775,41.2L758.8,25L711,56.7l-2.8,16.1l-51.1,34L693.2,142.9z"/>
+       <path class="st20" d="M302.5,440.8c1.4-4.1,2.4-10.3-2-14.7c-33.4-33.4-88.1,78.3-110.2,56.2c-4.9-4.9-3.6-9.1-2.3-11.5
+         c2.8,0.4,5.7-0.5,7.7-2.5c3.6-3.6,3.6-9.4,0-13l0,0c-3.6-3.6-9.4-3.6-13,0l0,0c-3,3-3.5,7.7-1.2,11.2c-2.7,3.9-7.8,13.8,1.4,23.1
+         c31.5,31.6,90.5-76.8,110.6-56.7c1.3,1.3,1.4,3.2,1.2,4.9c-2.1,0.2-4.1,1-5.7,2.5c-3.6,3.6-3.6,9.4,0,13s9.4,3.6,13,0
+         C305.6,449.9,305.8,444.4,302.5,440.8L302.5,440.8z M359.3,497.6c4.1-1.4,10.3-2.5,14.8,2c33.4,33.4-78.3,88.1-56.2,110.2
+         c4.9,4.9,9.1,3.6,11.5,2.2c-0.4-2.8,0.5-5.6,2.5-7.7c3.6-3.6,9.4-3.6,13,0l0,0c3.6,3.6,3.6,9.4,0.1,12.9c0,0,0,0-0.1,0.1
+         c-3,3-7.6,3.5-11.2,1.2c-3.9,2.7-13.8,7.8-23-1.4c-31.5-31.6,76.8-90.6,56.7-110.7c-1.3-1.3-3.2-1.4-4.9-1.2c-0.1,2.1-1,4.1-2.5,5.7
+         c-3.6,3.6-9.4,3.6-13,0c-3.6-3.6-3.6-9.4,0-13C350.2,494.5,355.7,494.3,359.3,497.6L359.3,497.6z"/>
+       <path class="st20" d="M200.4,536.1c0,0-15.7,26.3-19.3,35.8c-3.2,8.5-3.7,27.6-8.1,35.5c-14.2,25.6-82.8,82.8-82.8,82.8l19.7,19.7
+         c0,0,57.2-68.6,82.8-82.8c8-4.4,27-4.9,35.5-8.1c9.5-3.6,35.8-19.3,35.8-19.3L200.4,536.1z"/>
+       <path id="string" class="st20" d="M338.3,414.6l4.7,4.7L204.8,557.8l-4.7-4.7L338.3,414.6z M380.6,456.9l4.7,4.7L247.1,600.2
+         l-4.7-4.7L380.6,456.9z M366.6,442.9l4.7,4.8L233,586l-4.7-4.8L366.6,442.9z M352.5,428.8l4.8,4.7L218.9,571.8l-4.7-4.7L352.5,428.8
+         z"/>
+       <g id="VOILIN_x5F_BAR">
+         <path id="violin_x5F_bar" class="st21" d="M87.2,131.5l581.3,581.2l-13.2,13.1L74.1,144.6L87.2,131.5z"/>
+         <path class="st22" d="M56.4,162.4l581.2,581.2l-13.1,13.1L43.3,175.5L56.4,162.4z"/>
+         <path class="st20" d="M69,201.2l-44-44l62.2-25.7l25.7,25.7L69,201.2z M598.8,731l44,44l25.7-62.2l-25.7-25.7L598.8,731z"/>
+       </g>
+       <path class="st20" d="M583.4,689.3l54.2,54.2l-13.1,13.1l-54.2-54.2L583.4,689.3z"/>
+       </svg>
+       
+     </div>
+     <!-- Add more instrument icons as needed (up to 4 total) -->
+   </div>
+ 
+  
+   <!-- Add audio elements and link them to the instrument icons -->
+   <audio id="audio1" src="audio/drums.wav"></audio>
+   <audio id="audio2" src="audio/guitar1.wav"></audio>
+   <audio id="audio3" src="audio/piano1.wav"></audio>
+   <audio id="audio4" src="audio/violin1.wav"></audio>
+  
+ 
+   <button class="reset-button" onclick="reset()">Reset</button>
+  <div class="controls">
+     <button id="playBtn">Play</button>
+     <button id="pauseBtn">Pause</button>
+     <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+   </div>
+ 
+   
+ 
+   <script src="js/script.js"></script>
+ </body>
 </html>
