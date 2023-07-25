@@ -1,30 +1,249 @@
-.hidden{
-    display: none;
-}
-
-/* Sticky Header */
-.sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5%;
-    background-color: #000000;
-    padding: 10px;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(176, 176, 176, 0.1);
-}
-
-.sticky-header a {
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: black;
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust the width as per your logo size */
     margin-right: 20px;
-    color: rgb(188, 188, 188);
+  }
+  
+  
+  
+  a {
+    color: #fff;
     text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: grey;
+  }
+  .navtext a {
+    color: #ffffff;
+  
+  }
+  
+  .sidemenu {
+    display: flex;
+    gap: 5em;
+    font-size: 18px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* drag and drop area styling starts from here */
+  .drop-area {
+    width: 600px;
+    height: 200px;
+    border: 2px dashed #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pieces-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .piece {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .piece svg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .reset-button:active {
+    background-color: #1f4788;
+  }
+  
+  /* cantrol center styling brgins here */
+  
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  input[type="range"] {
+    width: 150px;
+  }
+  
+  
+  /* animation of icons begines here */
+  
+  
+    /* drum anuimation*/
+  
+    /* Style the drum set container */
+    .drum-set {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
     
-}
+    /* Add CSS animation for the drums */
+    #drum_x5F_1, #drum_x5F_2 {
+      animation: drumAnimation 0.3s linear infinite;
+    }
+    
+    @keyframes drumAnimation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    /* Add CSS animation for the crash cymbal */
+    #crash_x5F_cymbal_x5F_1, #crash_x5F_cymbal_x5F_2 {
+      animation: crashAnimation 0.4s linear infinite;
+    }
+    
+    @keyframes crashAnimation {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+    
+    /* Add styling for interactive drum set */
+    .drum-set svg:hover {
+      cursor: pointer;
+      fill: #FFCE54;
+    }
+  
+    /* from here guitar animation will begin*/
+    
+    /* Style the guitar container */
+  .guitar-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      animation: guitarMotion 5s linear infinite alternate;
+    }
+    
+    @keyframes guitarMotion {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+    
+    /* Style the strings animation */
+    #string {
+      animation: stringsAnimation 2s linear infinite;
+    }
+    
+    @keyframes stringsAnimation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    /* voilin  animation begins here */
+    
+    /* Style the violin container */
+  .violin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Style the violin container */
+  .violin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Style the violin bar */
+  #violin-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #B3660D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: violinBarAnimation 2s linear infinite;
+  }
+  
+  @keyframes violinBarAnimation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
 
-.sticky-header a:last-child {
-    margin-right: 0;
-}
 
 
 
